@@ -1,0 +1,197 @@
+/**
+ * Reset some basic elements
+ */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-typeface;
+    font-size: $base-font-size;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+//figure > img {
+//    display: block;
+//}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    list-style-type: none;
+
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h2, h3, h4 {
+}
+
+h1 {
+    font-size: $lrg-font-size;
+    line-height: 1;
+
+    @include media-query($on-tablet) {
+        font-size: $lrg-font-size - .5;
+    }
+
+    @include media-query($on-mobile) {
+        font-size: $med-font-size;
+    }
+}
+
+h2 {
+    font-size: $med-font-size;
+    margin: 0;
+    line-height: 1.3;
+
+    @include media-query($on-mobile) {
+        font-size: $med-font-size * .825;
+    }
+}
+
+h3 {
+    font-weight: 200;
+    font-size: $med-font-size;
+
+    @include media-query($on-tablet) {
+        font-size: $med-font-size - .3;
+    }
+
+    @include media-query($on-mobile) {
+        font-size: $small-font-size;
+    }
+}
+
+h4 {
+	text-transform: uppercase;
+	margin: 0 0 8px;
+	color: #D81F00;
+    font-weight: 400;
+    font-size: $small-font-size;
+
+    @include media-query($on-mobile) {
+        font-size: $xsmall-font-size;
+    }
+}
+
+h5 {
+    font-weight: 400;
+    font-size: $med-font-size * .8;
+}
+
+p {
+	line-height: $base-line-height;
+	margin-top: 0;
+    
+    @include media-query($on-mobile) {
+        font-size: $base-font-size * .7;
+    	line-height: $base-line-height - .1;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/**
+ * Links
+ */
+a {
+    color: $highlight-color;
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre {
+    font-size: 15px;
+	background-color: rgba(255,255,255,.2);
+    padding: 15px 20px;
+    overflow: auto;
+}
+
+// Border
+hr {
+    border-width: 0;
+    border-bottom: 1px solid $grey-color;
+}

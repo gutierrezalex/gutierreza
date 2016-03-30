@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section class="projects">
+	<h4>Projects</h4>
+	<ol>
+    {% for post in site.categories.project %}
+        <li>
+            <a href="{{ post.url }}">
+                <img src="{{ post.thumbnail }}">
+                <p>{{ post.excerpt }}</p>
+            </a>
+        </li>
+    {% endfor %}
+	</ol>
+</section>
+
+<section class="entries">
+	<h4>Entries</h4>
+
+    <div>
+        {% for post in site.categories.post %}
+    	<article>
+            <a href="{{ post.url | prepend: site.baseurl }}">
+        		<h2>{{ post.title }}</h2>
+        		<p>{{ post.excerpt }}</p>
+            </a>
+    	</article>
+    	{% endfor %}
+    </div>
+</section>

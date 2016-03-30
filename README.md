@@ -1,2 +1,1 @@
-# gutierreza
-Personal portfolio
+### gutierreza.com personal portfolio

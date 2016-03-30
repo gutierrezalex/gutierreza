@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="{% if page.path contains '_posts' %}{{ page.categories }} {{ page.id | remove:'/' }}{% else %}home{{ page.id }}{% endif %}">
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

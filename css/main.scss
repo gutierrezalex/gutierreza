@@ -1,0 +1,47 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-typeface: 'Helvetica Neue', serif;
+$secondary-typeface: Baskerville, Georgia, Times, serif;
+$base-font-size:   1.1rem;
+$xsmall-font-size:  $base-font-size * .7;
+$small-font-size: $base-font-size * .875;
+$reg-font-size: $base-font-size *  .91;
+$med-font-size: $base-font-size * 1.575;
+$lrg-font-size: $base-font-size * 3;
+$base-line-height: 1.5;
+
+$spacing-unit:  30px;
+
+$text-color: #111;
+$background-color: #FDE3A9;
+$background-color-dark: #FCDC97;
+
+
+$grey-color: #C6B284;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+$highlight-color: #D81F00;
+
+$on-mobile: 320px;
+$on-tablet: 768px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout"
+;
