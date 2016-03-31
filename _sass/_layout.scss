@@ -226,7 +226,7 @@ footer {
         }
     
         p {
-            font-size: $med-font-size * .65;
+            font-size: $med-font-size * .725;
             max-width: 80%;
             margin: 0 auto;
 
@@ -311,7 +311,7 @@ footer {
         h1 {
             font-size: $med-font-size;
             font-weight: 300;
-            margin-bottom: 1em;
+            margin-bottom: 0;
         }
 
         h2 {
@@ -323,7 +323,13 @@ footer {
             font-size: $base-font-size;
             font-weight: 600;
         }
-        
+
+        address {
+            font-style: normal;
+            margin: .4em 0 2em;
+            line-height: 1.4;
+        }
+
         p {
         	margin: 3px 0;
         }
@@ -338,7 +344,7 @@ footer {
         }
     
         li {
-            margin: 3px 0;
+            margin-bottom: 5px;
         }
     }
 }
