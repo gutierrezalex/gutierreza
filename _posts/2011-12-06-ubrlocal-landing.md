@@ -10,6 +10,8 @@ thumbnail: /assets/ubrlocal-thumb.jpg
 
 * * *
 
+Hosted on Github repository, and built with Bootstrap framework.
+
 <figure><img src="/assets/ubrlocal1.jpg"></figure>
 <figure><img src="/assets/ubrlocal2.jpg"></figure>
 <figure><img src="/assets/ubrlocal3.jpg"></figure>

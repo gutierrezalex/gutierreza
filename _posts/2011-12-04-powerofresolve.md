@@ -10,6 +10,8 @@ thumbnail: /assets/powerofresolve-thumb.jpg
 
 * * *
 
+Marked up, styled, and added a bit of Javascript of approved mockups, and added responsiveness for tablet and mobile devices
+
 <figure><img src="/assets/powerofresolve1.jpg"></figure>
 <figure><img src="/assets/powerofresolve2.jpg"></figure>
 <figure><img src="/assets/powerofresolve3.jpg"></figure>
