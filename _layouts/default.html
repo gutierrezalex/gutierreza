@@ -3,7 +3,8 @@
 
   {% include head.html %}
 
-  <body class="{% if page.path contains '_posts' %}{{ page.categories }} {{ page.id | remove:'/' }}{% else %}home{{ page.id }}{% endif %}">
+  <body class="{{ page.categories }} {{ page.id | remove:'/' }}">
+
     {% include header.html %}
 
     {{ content }}

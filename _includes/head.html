@@ -1,6 +1,6 @@
 <head>
-    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
+  <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
 	<meta name = "viewport" content = "initial-scale = 1.0">
 	<meta charset="utf-8">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -9,7 +9,9 @@
 			$("a[href^='http']").attr('target','_blank');
 		});
 	</script>
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+	<link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
     <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,6 +20,5 @@
 
           ga('create', 'UA-2465162-4', 'auto');
           ga('send', 'pageview');
-
     </script>
 </head>

@@ -1,354 +1,414 @@
-body {
-    padding-top: 7em;
+// Global styling
+.frame-chrome {
+	outline: 6px solid $frame-chrome-color;
 
-    @include media-query($on-mobile) {
-        padding-top: 0;
-    }
-
-    &.home {
-        padding-top: 0;
-
-        main a {
-            color: $text-color;
-            text-decoration: none;
-        }
-    }
+	@include media-query($on-mobile) {
+		outline-width: 3px;
+	}
 }
-
 
 /**
  * Container's widths
  */
-main,
-footer .projects {
+.inner {
 	max-width: 800px;
-    margin: 0 auto;
+  margin: 0 auto;
 
-    @include media-query($on-tablet) {
-    	max-width: 600px;
-        padding: 0 .5em;
-    }
+  @include media-query($on-tablet) {
+    max-width: 600px;
+    padding: 0 .4em;
+  }
+
+  .home &, .resume & {
+    max-width: 600px;
+  }
 }
 
 /**
  * Site header
  */
 header {
-    text-align: center;
-    padding: .6em 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-    background-color: transparentize($background-color-dark, .02);
-    box-shadow: 0 4px 0 rgba(0, 0, 0, .06);
+  h1 {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
 
-    h1 {
-        margin: 0;
-    }
+		.home & {
+			line-height: 1.1;
 
-    // Home header styling
-    .home & {
-        padding: 5em 0 4em;
-        position: static;
-        top: auto;
-        width: auto;
-        background-color: transparent;
-        box-shadow: none;
+			@include media-query($on-mobile) {
+		    font-size: $font-size-lrg * 1.13;
+		  }
+		}
+  }
 
-        @include media-query($on-tablet) {
-            padding-left: 1em;
-            padding-right: 1em;
-        }
+	a {
+		color: $text-color;
+		text-decoration: none;
+	}
 
-        @include media-query($on-mobile) {
-            padding: 3em 2em 2em;
-        }
-    }
+	span {
+		display: block;
+		color: $highlight-color;
+	}
 
-    @include media-query($on-tablet) {
-        padding: .4em 1em;
-    }
+	nav {
+		text-transform: uppercase;
+		margin-top: 2em;
+		font-size: $font-size-sm;
 
-    @include media-query($on-mobile) {
-        position: static;
-        text-align: center;
-        margin-bottom: 2em;
-    }
-}
+		@include media-query($on-mobile) {
+			margin-top: 1em;
+			font-size: $font-size-xs;
+		}
 
-.contact {
-	padding: 30px 0 90px;
-	text-align: center;
+		li {
+			display: inline-block;
 
-    li {
-        display: inline-block;
-    	margin: 0 10px;
-    }
-}
+			&:first-child:after {
+				content: "/";
+				margin: 0 .3em 0 .5em;
+			}
+		}
 
-.projects {
-	padding-left: 0;
+		a {
+			text-decoration: underline;
+		}
 
-    ol {
-    	margin: 0 -.6em;
-        display: flex;
-        flex-wrap: wrap;
-        font-size: $reg-font-size;
+	}
 
-        @include media-query($on-mobile) {
-            margin: 0;
-        }
-    }
+	.home & {
+		padding: 5em 0 4em;
 
-    li {
-        width: 33.333%;
-        padding: 0 .6em 4em;
+		@include media-query($on-mobile) {
+			padding: 2em 0;
+		}
+	}
 
-        @include media-query($on-tablet) {
-            width: 50%;
-        }
+  // Work pages header styling
+	.work & {
+		position: fixed;
+	  top: 2.5em;
+	  left: 2em;
+	  z-index: 99;
 
-        @include media-query($on-mobile) {
-            width: 48%;
-            padding: 0;
-            margin-right: .4em;
-            margin-bottom: 1em;
+		@include media-query($on-mobile) {
+			top: 1em;
+		  left: .25em;
+		}
 
-            &:nth-child(even) {
-                margin-right: 0;
-            }
-        }
+		h1 {
+			font-size: $font-size-md;
 
-        a {
-        	text-align: left;
-        	display: block;
-        }
-    }
+			@include media-query($on-mobile) {
+				font-size: $font-size-xs;
+			}
+		}
 
-    p {
-        margin-top: .7em;
-    }
-}
+		a {
+			display: block;
+			padding: .5em;
+			background-color: black;
+			color: white;
+			border-radius: 30px;
+			position: relative;
 
-.entries {
-	border-top: 1px double rgba(0,0,0,.1);
-	padding-top: 50px;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				width: 88%;
+				height: 88%;
+				border: 1px solid rgba(255,255,255,.5);
+				border-radius: 30px;
 
-    div {
-        margin: 0 -.6em;
-    }
-
-    article {
-        width: 50%;
-        padding: 0 .6em;
-
-        @include media-query($on-tablet) {
-    		width: auto;
-            display: block;
-        }
-    }
-
-    @include media-query($on-mobile) {
-		margin-bottom: 25px;
-		padding-top: 17px;
+				@include media-query($on-mobile) {
+					width: 82%;
+					height: 82%;
+				}
+			}
+		}
 	}
 }
 
+.projects {
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    margin-bottom: 2em;
+  }
+
+  h6 {
+    margin-bottom: 0;
+    color: $highlight-color;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+	a {
+		color: $text-color;
+		text-decoration: none;
+	}
+}
 
 /**
  * Footer
  */
 footer {
-    margin-top: 3em;
-    padding: 5em 0;
-    background-color: $background-color-dark;
+  padding: 4em 0;
 
-    @include media-query($on-mobile) {
-        padding: 2em 0;
-        margin-top: 0;
-    }
+  @include media-query($on-mobile) {
+		padding: 2em 0;
+  }
 
-    @include media-query($on-mobile) {
-        li:last-child {
-            display: none;
-        }
-    }
+	.work & {
+		background-color: $lightgrey-color;
+	}
 
-    ol {
-        margin-left: 0;
-    }
+	.inner {
+		max-width: 800px;
+	}
 
-    h2 {
-        @include media-query($on-mobile) {
-            font-size: $small-font-size;
-        }
-    }
+	ul {
+		margin-bottom: 0;
+		font-size: $font-size-sm;
+		display: flex;
+		justify-content: center;
+
+		@include media-query($on-mobile) {
+			display: block;
+	  }
+	}
+
+	.projects li {
+		width: 40%;
+		margin: 0 1em 0;
+
+		@include media-query($on-mobile) {
+			width: initial;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		&:first-child {
+			@include media-query($on-mobile) {
+				margin-bottom: 2em;
+			}
+		}
+	}
+}
+
+/**
+ * Homepage
+ */
+.home {
+	background-color: $background-color;
 }
 
 /**
  * Individual project
  */
-.project {
-    main {
-    	max-width: 920px;
-        padding: 0 .8em;
+.work {
+	main {
+		figure {
+			text-align: center;
+		}
 
-        @include media-query($on-tablet) {
-        	max-width: initial;
-        }
+		figcaption {
+			color: $highlight-color;
+			text-align: left;
+			margin-top: 2em;
+
+			@include media-query($on-mobile) {
+				margin-top: 1em;
+				text-align: center;
+			}
+		}
+	}
+
+	&-headline {
+		text-align: center;
+		padding: 4em 0;
+
+		@include media-query($on-mobile) {
+			padding: 2em 0;
+		}
+
+		img {
+			// max-width: 80%;
+
+			@include media-query($on-mobile) {
+				max-width: 50%;
+			}
+		}
+
+		h2 {
+			font-size: $font-size-xlrg;
+			font-weight: 300;
+      max-width: 800px;
+      margin: .6em auto 0;
+
+			@include media-query($on-mobile) {
+				font-size: $font-size-base;
+				padding: 0 .4em;
+		  }
     }
 
-    article {
-        text-align: center;
+		.losherederos & {
+			background-color: black;
+	    color: white;
+	  }
 
-        h3 {
-        	max-width: 80%;
-            margin: 0 auto;
+		.ubrlocal & {
+			a {
+	    	color: white;
+			}
+	  }
+	}
 
-            @include media-query($on-tablet) {
-            	max-width: 85%;
-            }
+	&-copy {
+		padding-bottom: 4em;
 
-            @include media-query($on-mobile) {
-            	max-width: initial;
-                padding: 0;
-            }
-        }
+		@include media-query($on-mobile) {
+			padding-bottom: 2em;
+		}
 
-        hr {
-            margin: 3em auto;
-            max-width: 20%;
+		h3, ul {
+			margin-bottom: 2em;
+		}
 
-            @include media-query($on-mobile) {
-                margin: 1em auto;
-            }
-        }
+		h3 {
+			font-size: $font-size-lrg;
+			font-weight: 400;
 
-        p {
-            font-size: $med-font-size * .725;
-            max-width: 80%;
-            margin: 0 auto;
+			@include media-query($on-mobile) {
+				font-size: $font-size-md;
+			}
+		}
 
-            @include media-query($on-mobile) {
-                font-size: $small-font-size * .65;
-                max-width: initial;
-            }
-        }
+		ul {
+			padding-left: 1.6em;
+		}
 
-        figure {
-            margin: 3em 0;
+		li {
+			font-size: $font-size-md;
+			margin-bottom: .4em;
+			list-style-type: square;
 
-            @include media-query($on-mobile) {
-                margin: 2em 0;
-            }
-        }
+			@include media-query($on-mobile) {
+				font-size: $font-size-sm;
+			}
+		}
+
+		figure {
+			margin-bottom: 4em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@include media-query($on-mobile) {
+				margin-bottom: 2em;
+
+			}
     }
-}
 
-/**
- * Posts
- */
-.post {
-    main {
-    	max-width: 620px;
+		img {
+			// max-width: 80%;
 
-        @include media-query($on-mobile) {
-        	max-width: initial;
-            padding: 0;
-        }
-    }
+			@include media-query($on-mobile) {
+				max-width: 90%;
+			}
+		}
 
-    article {
+		.losherederos & {
+			background-color: black;
+			color: white;
 
-        @include media-query($on-mobile) {
-            padding: 0 1em;
-        }
+			> .inner {
+				margin-bottom: 2em;
+			}
 
-        h1, h3 {
-            text-align: center;
-        }
+			p {
+				font-size: $font-size-md;
+				color: $lightgrey-color;
+			}
 
-        h3 {
-            color: $highlight-color;
-            padding: 0 2em;
+			&-additional {
+				margin-top: 4em;
+				background-color: transparent;
 
-             @include media-query($on-mobile) {
-                padding: 0;
-                line-height: 1.1;
-             }
-        }
+				@include media-query($on-mobile) {
+					margin-top: 2em;
+				}
+			}
+		}
+	}
 
-        hr {
-        	margin: 40px auto;
-            border-width: 0;
-            border-bottom: 1px solid $grey-color;
-            width: 25%;
-        }
-    }
+	&.e4inc,
+	&.statlergrill {
+		background-color: lighten($lightgrey-color, 2%);
+	}
+
+	&.ubrlocal {
+		background-color: $color-ubrlocal;
+
+		main {
+			color: white;
+		}
+	}
 }
 
 /**
  * Resume
  */
 .resume {
-    main {
-    	max-width: 600px;
+	padding-top: 5em;
 
-        @include media-query($on-mobile) {
-            width: auto;
-            padding-top: 2em;
-        }
+	@include media-query($on-mobile) {
+		padding-top: 2em;
+	}
 
-        article a {
-            color: $text-color;
-        }
+	h1 {
+		line-height: 1.1;
 
-        h1, h4 {
-            text-transform: uppercase;
-        }
+		@include media-query($on-mobile) {
+			font-size: $font-size-lrg * 1.13;
+		}
+	}
 
-        h1 {
-            font-size: $med-font-size;
-            font-weight: 300;
-            margin-bottom: 0;
-        }
+  main {
+		article a {
+	    color: $text-color;
+	  }
 
-        h2 {
-            margin-bottom: 1em;
-        }
+	  h3 {
+	    margin-bottom: 0;
+	    font-size: $font-size-base;
+	    font-weight: 600;
+	  }
 
-        h3 {
-            margin-bottom: 0;
-            font-size: $base-font-size;
-            font-weight: 600;
-        }
+	  address {
+      font-style: normal;
+      margin: .4em 0 2em;
+	  }
 
-        address {
-            font-style: normal;
-            margin: .4em 0 2em;
-            line-height: 1.4;
-        }
+	  em {
+	      font-weight: normal;
+	  }
 
-        p {
-        	margin: 3px 0;
-        }
+	  ul {
+	  	margin: .7em 0 2.4em;
+	  }
 
-        em {
-            font-style: normal;
-            font-weight: normal;
-        }
-
-        ul {
-        	margin: .7em 0 2.4em;
-          margin-left: 0;
-        }
-
-        li {
-            margin-bottom: .4em;
-            line-height: 1.4;
-            // list-style-type: square;
-            // list-style-position: inside;
-        }
-    }
+	  li {
+	    margin-bottom: .4em;
+	  }
+  }
 }

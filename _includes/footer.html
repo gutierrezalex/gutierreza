@@ -1,20 +1,23 @@
 </main>
 <footer>
-    <section class="projects">
+   <section class="projects">
+     <div class="inner">
     {% if page.path contains '_posts' %}
-        <h4>Latest Projects</h4>
-        <ol>
-            {% for post in site.posts limit:4 %}
-                {% if post.categories contains 'project' %}
-                <li>
-                    <a href="{{ post.url }}">
-                        <img src="{{ post.thumbnail }}">
-                    </a>
-                </li>
-                {% endif %}
-            {% endfor %}
-        </ol>
+      <ul>
+        {% for post in site.posts limit:3 %}
+          {% if post.url != page.url %}
+            {% if forloop.index < 3 or found %}
+            <li>
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              <p>{{ post.excerpt }}</p>
+            </li>
+            {% endif %}
+          {% else %}
+            {% assign found = true %}
+          {% endif %}
+        {% endfor %}
+      </ul>
     {% endif %}
-        <h2>Hello, I’m Alex, web designer. I help the <a href="http://stackoverflow.com/users/{{ site.stackoverflow_username }}">stackoverflow</a> community, have a few projects on <a href="https://github.com/{{ site.github_username }}">github</a>, and once in a blue moon, <a href="http://twitter.com/{{ site.twitter_username }}">I tweet</a>. <a href="/resume">My resume</a>, and as always, <a href="mailto:gutierrezalex@gmail.com">say hi</a>.</h2>
-    </section>
+    </div>
+   </section>
 </footer>

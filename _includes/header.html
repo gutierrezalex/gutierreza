@@ -1,10 +1,25 @@
 <header>
-    <a href="/">
-    {% if page.path contains '_posts' %}
-        <img src="/assets/initials.svg">
-    {% else %}
-        <img src="/assets/brand.svg">
+  <div class="inner">
+    <h1>
+      <a href="/">
+      {% if page.id == 'home' %}
+        Alexander Gutierrez
+        <span>Web Designer</span>
+      {% elsif page.id == 'resume' %}
+        ALEXANDER GUTIERREZ
+      {% else %}
+      AG
+      {% endif %}
+    	</a>
+    </h1>
+    {% if page.id == 'home' %}
+    <nav>
+      <ul>
+        <li><a href="/resume">resume</a></li>
+        <li><a href="mailto:gutierrezalex@gmail.com">contact</a></li>
+      </ul>
+    </nav>
     {% endif %}
-	</a>
+  </div>
 </header>
 <main>
