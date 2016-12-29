@@ -37,7 +37,7 @@ header {
 			line-height: 1.1;
 
 			@include media-query($on-mobile) {
-		    font-size: $font-size-lrg * 1.13;
+		    font-size: $font-size-lrg * 1.11;
 		  }
 		}
   }
@@ -379,7 +379,7 @@ footer {
 		line-height: 1.1;
 
 		@include media-query($on-mobile) {
-			font-size: $font-size-lrg * 1.13;
+			font-size: $font-size-lrg * 1.11;
 		}
 	}
 
