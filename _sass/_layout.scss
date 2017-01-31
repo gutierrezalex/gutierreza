@@ -1,25 +1,16 @@
-// Global styling
-.frame-chrome {
-	outline: 6px solid $frame-chrome-color;
-
-	@include media-query($on-mobile) {
-		outline-width: 3px;
-	}
-}
-
 /**
- * Container's widths
+ * Global container
  */
 .inner {
-	max-width: 800px;
+	max-width: 960px;
   margin: 0 auto;
 
   @include media-query($on-tablet) {
-    max-width: 600px;
+    max-width: 670px;
     padding: 0 .4em;
   }
 
-  .home &, .resume & {
+  .resume & {
     max-width: 600px;
   }
 }
@@ -27,18 +18,22 @@
 /**
  * Site header
  */
-header {
+.header {
+	padding: 5em 0;
+
+	@include media-query($on-mobile) {
+		padding: 2em 0;
+	}
+
   h1 {
     margin: 0;
+		font-size: $font-size-xlrg;
     font-weight: 300;
     text-transform: uppercase;
+		line-height: 1.1;
 
-		.home & {
-			line-height: 1.1;
-
-			@include media-query($on-mobile) {
-		    font-size: $font-size-lrg * 1.11;
-		  }
+		@include media-query($on-mobile) {
+			font-size: $font-size-lrg * 1.11;
 		}
   }
 
@@ -48,13 +43,16 @@ header {
 	}
 
 	span {
-		display: block;
 		color: $highlight-color;
+		&:before {
+			content: "";
+			display: block;
+		}
 	}
 
 	nav {
 		text-transform: uppercase;
-		margin-top: 2em;
+		margin-top: 1em;
 		font-size: $font-size-sm;
 
 		@include media-query($on-mobile) {
@@ -62,96 +60,22 @@ header {
 			font-size: $font-size-xs;
 		}
 
-		li {
-			display: inline-block;
-
-			&:first-child:after {
-				content: "/";
-				margin: 0 .3em 0 .5em;
-			}
-		}
-
 		a {
 			text-decoration: underline;
 		}
 	}
 
-	.home & {
-		padding: 5em 0 4em;
-
-		@include media-query($on-mobile) {
-			padding: 2em 0;
-		}
+	ul {
+		margin-bottom: 0;
 	}
 
-  // Work pages header styling
-	.work & {
-		position: fixed;
-	  top: 2.5em;
-	  left: 2em;
-	  z-index: 99;
+	li {
+		display: inline-block;
+		margin-right: .8em;
 
-		@include media-query($on-mobile) {
-			top: 1em;
-		  left: .25em;
+		&:before {
+			content: "/";
 		}
-
-		h1 {
-			font-size: $font-size-md;
-
-			@include media-query($on-mobile) {
-				font-size: $font-size-xs;
-			}
-		}
-
-		a {
-			display: block;
-			padding: .5em;
-			background-color: black;
-			color: white;
-			border-radius: 30px;
-			position: relative;
-
-			&:after {
-				content: "";
-				position: absolute;
-				top: 2px;
-				left: 2px;
-				width: 88%;
-				height: 88%;
-				border: 1px solid rgba(255,255,255,.5);
-				border-radius: 30px;
-
-				@include media-query($on-mobile) {
-					width: 82%;
-					height: 82%;
-				}
-			}
-		}
-	}
-}
-
-.projects {
-  ul {
-    margin-left: 0;
-  }
-
-  li {
-    margin-bottom: 2em;
-  }
-
-  h6 {
-    margin-bottom: 0;
-    color: $highlight-color;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-weight: 600;
-  }
-
-	a {
-		color: $text-color;
 	}
 }
 
@@ -164,10 +88,6 @@ footer {
   @include media-query($on-mobile) {
 		padding: 2em 0;
   }
-
-	.work & {
-		background-color: $lightgrey-color;
-	}
 
 	.inner {
 		max-width: 800px;
@@ -207,158 +127,207 @@ footer {
  */
 .home {
 	background-color: $background-color;
-}
 
-/**
- * Individual project
- */
-.work {
-	main {
-		figure {
-			text-align: center;
+	article {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 9em;
+
+		@include media-query($on-tablet) {
+			margin-bottom: 6em;
 		}
 
-		figcaption {
+		@include media-query($on-mobile) {
+			display: block;
+			margin-bottom: 4em;
+		}
+
+		h6 {
+			flex: 1 100%;
+			text-transform: uppercase;
+			margin-bottom: 0;
 			color: $highlight-color;
-			text-align: left;
-			margin-top: 2em;
+		}
 
-			@include media-query($on-mobile) {
-				margin-top: 1em;
-				text-align: center;
+		h1, ul {
+			flex: 3 0;
+		}
+
+		h1 {
+			padding-right: 1em;
+
+			@include media-query($on-tablet) {
+				padding-right: 0;
+				margin-bottom: .4em;
 			}
-		}
-	}
-
-	&-headline {
-		text-align: center;
-		padding: 4em 0;
-
-		@include media-query($on-mobile) {
-			padding: 2em 0;
-		}
-
-		img {
-			// max-width: 80%;
-
-			@include media-query($on-mobile) {
-				max-width: 50%;
-			}
-		}
-
-		h2 {
-			font-size: $font-size-xlrg;
-			font-weight: 300;
-      max-width: 800px;
-      margin: .6em auto 0;
-
-			@include media-query($on-mobile) {
-				font-size: $font-size-base;
-				padding: 0 .4em;
-		  }
-    }
-
-		.losherederos & {
-			background-color: black;
-	    color: white;
-	  }
-
-		.ubrlocal & {
-			a {
-	    	color: white;
-			}
-	  }
-	}
-
-	&-copy {
-		padding-bottom: 4em;
-
-		@include media-query($on-mobile) {
-			padding-bottom: 2em;
-		}
-
-		h3, ul {
-			margin-bottom: 2em;
-		}
-
-		h3 {
-			font-size: $font-size-lrg;
-			font-weight: 400;
-
-			@include media-query($on-mobile) {
-				font-size: $font-size-md;
-			}
-		}
-
-		ul {
-			padding-left: 1.6em;
 		}
 
 		li {
-			font-size: $font-size-md;
-			margin-bottom: .4em;
+	    margin-bottom: .3em;
+			margin-left: 3em;
 			list-style-type: square;
 
 			@include media-query($on-mobile) {
-				font-size: $font-size-sm;
-			}
-		}
-
-		figure {
-			margin-bottom: 4em;
-
-			&:last-child {
+				margin-left: 0;
 				margin-bottom: 0;
 			}
+	  }
+	}
+}
+
+/**
+ * Screenshot chrome framing
+ */
+.screenshot {
+	text-align: center;
+	margin-left: -2.66em;
+	margin-right: -2.66em;
+
+	@include media-query($on-tablet) {
+		margin-left: -1em;
+		margin-right: -1em;
+	}
+
+	@include media-query($on-mobile) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&-combo {
+		position: relative;
+
+		.screenshot-mobile {
+			position: absolute;
+			bottom: 0;
+			right: -1em;
+			margin: 0;
+
+			@include media-query($on-tablet) {
+				width: 30%;
+			}
 
 			@include media-query($on-mobile) {
-				margin-bottom: 2em;
-
+				width: initial;
+				position: relative;
+				left: initial;
+				bottom: initial;
+				right: 0;
+				margin-left: 2em;
+				margin-right: 2em;
+				padding-top: 2.4em;
+				padding-bottom: 2.6em;
 			}
-    }
+		}
+	}
+
+	&-chrome {
+		padding-top: 40px;
+		background-color: darkgrey;
+		border-radius: 6px 6px 0 0;
+		position: relative;
+		margin-bottom: 1em;
+
+		@include media-query($on-mobile) {
+			outline-width: 3px;
+			padding-top: 0;
+		}
+
+		&:before {
+			content: "";
+			background:
+			radial-gradient(circle at 8px 50%, #FF6058 6px, transparent 7px),
+			radial-gradient(circle at 29px 50%, #FFBD2E 6px, transparent 7px),
+			radial-gradient(circle at 50px 50%, #29C940 6px, transparent 7px);
+
+			width: 60px;
+			height: 16px;
+			position: absolute;
+			left: 12px;
+			top: 12px;
+
+			@include media-query($on-mobile) {
+				display: none;
+			}
+		}
+	}
+
+	&-mobile, &-tablet {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		background-color: black;
+		padding: 3.4em .6em 3.6em;
+		border-radius: 18px;
+		border: 3px solid rgba(255,255,255,.5);
+		margin: 2em;
+
+		@include media-query($on-mobile) {
+			margin-top: 1em;
+			padding-top: 2.4em;
+			padding-bottom: 2.6em;
+		}
 
 		img {
-			// max-width: 80%;
+			border: 1px solid rgba(255,255,255,.08);
+		}
+
+		&:before, &:after {
+			position: absolute;
+			content: "";
+		  left: 50%;
+			background-color: rgba(255,255,255,.15);
+		  transform: translateX(-50%);
+		}
+
+		&:before {
+		  top: 30px;
+			border-radius: 9px;
 
 			@include media-query($on-mobile) {
-				max-width: 90%;
+				top: 20px;
 			}
 		}
 
-		.losherederos & {
-			background-color: black;
-			color: white;
+		&:after {
+			width: 40px;
+			height: 40px;
+			bottom: 10px;
+			border-radius: 40px;
 
-			> .inner {
-				margin-bottom: 2em;
-			}
-
-			p {
-				font-size: $font-size-md;
-				color: $lightgrey-color;
-			}
-
-			&-additional {
-				margin-top: 4em;
-				background-color: transparent;
-
-				@include media-query($on-mobile) {
-					margin-top: 2em;
-				}
+			@include media-query($on-mobile) {
+				width: 30px;
+				height: 30px;
+				bottom: 7px;
 			}
 		}
 	}
 
-	&.e4inc,
-	&.statlergrill {
-		background-color: lighten($lightgrey-color, 2%);
+	&-mobile {
+		@include media-query($on-mobile) {
+			margin-left: 3em;
+			margin-right: 3em;
+			margin-bottom: 0;
+		}
+
+		&:before {
+			width: 70px;
+			height: 4px;
+
+			@include media-query($on-mobile) {
+				width: 50px;
+			}
+		}
 	}
 
-	&.ubrlocal {
-		background-color: $color-ubrlocal;
+	&-tablet {
+		@include media-query($on-mobile) {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
 
-		main {
-			color: white;
+		&:before {
+			width: 8px;
+			height: 8px;
 		}
 	}
 }

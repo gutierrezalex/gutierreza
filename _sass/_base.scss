@@ -18,7 +18,7 @@ img {
 }
 
 h1 {
-  font-size: $font-size-xlrg;
+  font-size: $font-size-lrg;
 
   @include media-query($on-mobile) {
     font-size: $font-size-md;
@@ -60,10 +60,10 @@ h5 {
 }
 
 h6 {
-  font-size: $font-size-xs;
+  font-size: $font-size-sm;
 
   @include media-query($on-mobile) {
-    font-size: $font-size-xxs;
+    font-size: $font-size-xs;
   }
 }
 
@@ -81,7 +81,7 @@ b, strong {
 }
 
 a {
-  color: $highlight-color;
+  color: $text-color;
 }
 
 p:last-child,
