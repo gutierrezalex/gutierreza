@@ -1,9 +1,6 @@
 ---
-layout: post
 categories: work
 tags: work
-title:  "Implementation of design for Power of Resolve"
-excerpt: Resolve's stain removal products, browse stain solving tips, and video tutorials.
 ---
 
 # Resolve's tip exchange informs on the latest tips and tricks in removing difficult stains

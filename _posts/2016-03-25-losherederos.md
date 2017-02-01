@@ -1,9 +1,6 @@
 ---
-layout: post
 categories: work
 tags: work
-title:  "Design and implementation for Los Herederos"
-excerpt: Los Herederos document storytelling with digital/multi-media to amplify the voices of communities.
 ---
 
 # Los Herederos document and promote personal narratives that accompany the arrival and dissemination of folk traditions

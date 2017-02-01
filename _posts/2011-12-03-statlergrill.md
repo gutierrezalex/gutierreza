@@ -1,9 +1,6 @@
 ---
-layout: post
 categories: work
 tags: work
-title:  "Design and implementation for Statler Grill"
-excerpt: Statler Grill serve classic New York prime steaks is their game, as well as daily delivered fresh seafood.
 ---
 
 # Serving classic New York prime steaks is their game, as well as daily delivered fresh seafood
