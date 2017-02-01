@@ -1,9 +1,10 @@
 ---
+layout: post
 categories: work
 tags: work
+title: Statler Grill
+excerpt: Serving classic New York prime steaks is their game, as well as daily delivered fresh seafood
 ---
-
-# Serving classic New York prime steaks is their game, as well as daily delivered fresh seafood
 
 * Designed and implemented on to Wordpress
 * Used the [Bootstrap](http://getbootstrap.com/) framework for this project

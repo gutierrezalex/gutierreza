@@ -19,7 +19,7 @@
  * Site header
  */
 .header {
-	padding: 5em 0;
+	padding: 5em 0 4em;
 
 	@include media-query($on-mobile) {
 		padding: 2em 0;
@@ -37,7 +37,7 @@
 		line-height: 1.1;
 
 		@include media-query($on-mobile) {
-			font-size: $font-size-lrg * 1.11;
+			font-size: $font-size-lrg * 1.06;
 		}
   }
 
@@ -56,7 +56,7 @@
 
 	nav {
 		text-transform: uppercase;
-		margin-top: 1em;
+		margin-top: 1.6em;
 		font-size: $font-size-sm;
 
 		@include media-query($on-mobile) {
@@ -75,11 +75,7 @@
 
 	li {
 		display: inline-block;
-		margin-right: .8em;
-
-		&:before {
-			content: "/";
-		}
+		margin-right: 1em;
 	}
 }
 
@@ -87,43 +83,6 @@
  * Footer
  */
 footer {
-  padding: 4em 0;
-
-  @include media-query($on-mobile) {
-		padding: 2em 0;
-  }
-
-	.inner {
-		max-width: 800px;
-	}
-
-	ul {
-		margin-bottom: 0;
-		font-size: $font-size-sm;
-		display: flex;
-		justify-content: center;
-
-		@include media-query($on-mobile) {
-			display: block;
-	  }
-	}
-
-	.projects li {
-		width: 40%;
-		margin: 0 1em 0;
-
-		@include media-query($on-mobile) {
-			width: initial;
-			margin-left: 0;
-			margin-right: 0;
-		}
-
-		&:first-child {
-			@include media-query($on-mobile) {
-				margin-bottom: 2em;
-			}
-		}
-	}
 }
 
 /**
@@ -334,6 +293,78 @@ footer {
 }
 
 /**
+ * Screenshot chrome framing
+ */
+.work {
+	header {
+		background-color: $lightgrey-color;
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		margin-bottom: 2.5em;
+	}
+
+	main {
+		h1 {
+			font-size: $font-size-xlrg;
+
+			@include media-query($on-mobile) {
+				font-size: $font-size-lrg * .87;
+			}
+		}
+
+		h1, ul {
+			width: 75%;
+
+			@include media-query($on-mobile) {
+				width: initial;
+			}
+		}
+	}
+
+	footer {
+		background-color: $lightgrey-color;
+		padding: 4em 0;
+		margin-top: 2em;
+
+	  @include media-query($on-mobile) {
+			padding: 2em 0;
+	  }
+
+		.inner {
+			max-width: 800px;
+		}
+
+		ul {
+			margin-bottom: 0;
+			font-size: $font-size-sm;
+			display: flex;
+			justify-content: center;
+
+			@include media-query($on-mobile) {
+				display: block;
+		  }
+		}
+
+		li {
+			width: 40%;
+			margin: 0 1em 0;
+
+			@include media-query($on-mobile) {
+				width: initial;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			&:first-child {
+				@include media-query($on-mobile) {
+					margin-bottom: 2em;
+				}
+			}
+		}
+	}
+}
+
+/**
  * Resume
  */
 .resume {
@@ -341,14 +372,6 @@ footer {
 
 	@include media-query($on-mobile) {
 		padding-top: 2em;
-	}
-
-	h1 {
-		line-height: 1.1;
-
-		@include media-query($on-mobile) {
-			font-size: $font-size-lrg * 1.11;
-		}
 	}
 
   main {

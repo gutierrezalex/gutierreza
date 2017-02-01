@@ -2,17 +2,13 @@
   <div class="inner">
     <h1>
       <a href="/">
-      {% if page.id == 'home' %}
         Alexander Gutierrez
+      {% if page.id != 'resume' %}
         <span>Web Designer</span>
-      {% elsif page.id == 'resume' %}
-        ALEXANDER GUTIERREZ
-      {% else %}
-      AG
       {% endif %}
     	</a>
     </h1>
-    {% if page.id == 'home' %}
+    {% if page.id != 'resume' %}
     <nav>
       <ul>
         <li><a href="/resume">resume</a></li>

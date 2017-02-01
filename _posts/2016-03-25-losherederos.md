@@ -1,9 +1,10 @@
 ---
+layout: post
 categories: work
 tags: work
+title: Los Herederos
+excerpt: Los Herederos document and promote personal narratives that accompany the arrival and dissemination of folk traditions
 ---
-
-# Los Herederos document and promote personal narratives that accompany the arrival and dissemination of folk traditions
 
 * Designed and implemented on to Wordpress
 * Typeface used: [Oswald](https://fonts.google.com/specimen/Oswald)

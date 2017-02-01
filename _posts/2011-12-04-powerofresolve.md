@@ -1,9 +1,10 @@
 ---
+layout: post
 categories: work
 tags: work
+title: Power of Resolve
+excerpt: Resolve's tip exchange informs on the latest tips and tricks in removing difficult stains
 ---
-
-# Resolve's tip exchange informs on the latest tips and tricks in removing difficult stains
 
 * Teamed up with back end developer to implement their in-house design onto Umbraco CMS
 * [Visit the site](http://powerofresolve.com)
