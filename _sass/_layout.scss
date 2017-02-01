@@ -25,6 +25,10 @@
 		padding: 2em 0;
 	}
 
+	.resume & {
+		padding: 0;
+	}
+
   h1 {
     margin: 0;
 		font-size: $font-size-xlrg;
@@ -142,11 +146,8 @@ footer {
 			margin-bottom: 4em;
 		}
 
-		h6 {
+		h4 {
 			flex: 1 100%;
-			text-transform: uppercase;
-			margin-bottom: 0;
-			color: $highlight-color;
 		}
 
 		h1, ul {
@@ -371,7 +372,7 @@ footer {
 	  }
 
 	  ul {
-	  	margin: .7em 0 2.4em;
+	  	margin: .4em 0 2.4em;
 	  }
 
 	  li {
