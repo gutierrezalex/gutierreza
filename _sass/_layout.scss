@@ -370,6 +370,7 @@ footer {
  */
 .resume {
 	padding-top: 5em;
+	padding-bottom: 5em;
 
 	@include media-query($on-mobile) {
 		padding-top: 2em;
