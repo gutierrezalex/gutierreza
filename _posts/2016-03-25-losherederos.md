@@ -13,9 +13,9 @@ excerpt: Los Herederos document and promote personal narratives that accompany t
 
 <div class="screenshot screenshot-combo">
   <div class="screenshot-chrome">
-    <img src="/assets/losherederos-screenshot-1.jpg" srcset="/assets/losherederos-screenshot-1.jpg 1x, /assets/losherederos-screenshot-1@2x.jpg 2x">
+    <img src="/assets/losherederos-screenshot-1.jpg" srcset="/assets/losherederos-screenshot-1@2x.jpg 2x">
   </div>
   <div class="screenshot-mobile">
-    <img src="/assets/losherederos-screenshot-2.jpg" srcset="/assets/losherederos-screenshot-2.jpg 1x, /assets/losherederos-screenshot-2@2x.jpg 2x">
+    <img src="/assets/losherederos-screenshot-2.jpg" srcset="/assets/losherederos-screenshot-2@2x.jpg 2x">
   </div>
 </div>

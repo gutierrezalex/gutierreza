@@ -11,9 +11,9 @@ excerpt: Resolve's tip exchange informs on the latest tips and tricks in removin
 
 <div class="screenshot screenshot-combo">
   <div class="screenshot-chrome">
-    <img src="/assets/powerofresolve-screenshot-1.jpg" srcset="/assets/powerofresolve-screenshot-1.jpg 1x, /assets/powerofresolve-screenshot-1@2x.jpg 2x">
+    <img src="/assets/powerofresolve-screenshot-1.jpg" srcset="/assets/powerofresolve-screenshot-1@2x.jpg 2x">
   </div>
   <div class="screenshot-mobile">
-    <img src="/assets/powerofresolve-screenshot-4.jpg" srcset="/assets/powerofresolve-screenshot-4.jpg 1x, /assets/powerofresolve-screenshot-4@2x.jpg 2x">
+    <img src="/assets/powerofresolve-screenshot-4.jpg" srcset="/assets/powerofresolve-screenshot-4@2x.jpg 2x">
   </div>
 </div>
