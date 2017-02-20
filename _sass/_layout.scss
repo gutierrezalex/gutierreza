@@ -177,18 +177,24 @@ footer {
 				margin-right: 2em;
 				padding-top: 2.4em;
 				padding-bottom: 2.6em;
+
+				@include media-query($on-mobile) {
+					padding-top: 2em;
+					padding-bottom: 2.2em;
+				}
 			}
 		}
 	}
 
 	&-chrome {
-		padding-top: 40px;
-		background-color: darkgrey;
+		padding-top: 35px;
+		background-color: grey;
 		border-radius: 6px 6px 0 0;
 		position: relative;
 		margin-bottom: 1em;
 
 		@include media-query($on-mobile) {
+			background-color: transparent;
 			outline-width: 3px;
 			padding-top: 0;
 		}
@@ -196,15 +202,15 @@ footer {
 		&:before {
 			content: "";
 			background:
-			radial-gradient(circle at 8px 50%, #FF6058 6px, transparent 7px),
-			radial-gradient(circle at 29px 50%, #FFBD2E 6px, transparent 7px),
-			radial-gradient(circle at 50px 50%, #29C940 6px, transparent 7px);
+			radial-gradient(circle at 7px 50%, #FF6058 5px, transparent 6px),
+			radial-gradient(circle at 25px 50%, #FFBD2E 5px, transparent 6px),
+			radial-gradient(circle at 43px 50%, #29C940 5px, transparent 6px);
 
 			width: 60px;
 			height: 16px;
 			position: absolute;
-			left: 12px;
-			top: 12px;
+			left: 10px;
+			top: 10px;
 
 			@include media-query($on-mobile) {
 				display: none;
@@ -222,11 +228,11 @@ footer {
 		border: 3px solid rgba(255,255,255,.5);
 		margin: 2em;
 
-		@include media-query($on-mobile) {
-			margin-top: 1em;
-			padding-top: 2.4em;
-			padding-bottom: 2.6em;
-		}
+		// @include media-query($on-mobile) {
+		// 	margin-top: 1em;
+		// 	padding-top: 2em;
+		// 	padding-bottom: 2em;
+		// }
 
 		img {
 			border: 1px solid rgba(255,255,255,.08);
@@ -256,8 +262,8 @@ footer {
 			border-radius: 40px;
 
 			@include media-query($on-mobile) {
-				width: 30px;
-				height: 30px;
+				width: 25px;
+				height: 25px;
 				bottom: 7px;
 			}
 		}
@@ -265,17 +271,18 @@ footer {
 
 	&-mobile {
 		@include media-query($on-mobile) {
-			margin-left: 3em;
-			margin-right: 3em;
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 0;
+			width: 50%;
 		}
 
 		&:before {
 			width: 70px;
-			height: 4px;
+			height: 3px;
 
 			@include media-query($on-mobile) {
-				width: 50px;
+				width: 40px;
 			}
 		}
 	}
