@@ -96,13 +96,13 @@ footer {
 		display: flex;
 		flex-flow: row wrap;
 		margin-bottom: 8em;
-		font-size: 90%;
 
 		@include media-query($on-tablet) {
 			margin-bottom: 6em;
 		}
 
 		@include media-query($on-mobile) {
+			font-size: 90%;
 			display: block;
 			margin-bottom: 4em;
 		}
