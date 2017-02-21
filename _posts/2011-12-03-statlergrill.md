@@ -14,7 +14,7 @@ excerpt: Serving classic New York prime steaks is their game, as well as daily d
   <div class="screenshot-chrome">
     <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487709474/sg-screen_shrhef.jpg">
   </div>
-  <div class="screenshot-mobile">
+  <div class="screenshot-device screenshot-mobile">
     <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487709472/sg-mobile_js6brv.jpg">
   </div>
 </div>

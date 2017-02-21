@@ -96,6 +96,7 @@ footer {
 		display: flex;
 		flex-flow: row wrap;
 		margin-bottom: 8em;
+		font-size: 90%;
 
 		@include media-query($on-tablet) {
 			margin-bottom: 6em;
@@ -163,19 +164,14 @@ footer {
 			right: -1em;
 			margin: 0;
 
-			@include media-query($on-tablet) {
-				width: 30%;
-			}
-
 			@include media-query($on-mobile) {
 				width: initial;
 				position: relative;
 				left: initial;
 				bottom: initial;
 				right: 0;
-				margin-left: 3em;
-				margin-right: 3em;
-				padding: 2em .3em;
+				margin-left: 4em;
+				margin-right: 4em;
 				border-radius: 9px;
 				border-width: 3px;
 			}
@@ -190,8 +186,8 @@ footer {
 		margin-bottom: 2em;
 
 		@include media-query($on-mobile) {
+			margin-bottom: 1em;
 			background-color: transparent;
-			outline-width: 3px;
 			padding-top: 0;
 		}
 
@@ -214,15 +210,20 @@ footer {
 		}
 	}
 
-	&-mobile, &-tablet {
+	&-device {
+		background-color: black;
+		border-radius: 20px;
+		border: 2px solid rgba(255,255,255,.25);
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
-		background-color: black;
-		padding: 3em .4em 3.4em;
-		border-radius: 18px;
-		border: 2px solid rgba(255,255,255,.5);
+		padding: 3em .4em 3.6em;
 		margin: 0 2em 2em;
+
+		@include media-query($on-mobile) {
+			margin-bottom: 1em;
+			padding: 2em .2em 2em;
+		}
 
 		&:before, &:after {
 			position: absolute;
@@ -248,8 +249,8 @@ footer {
 			border-radius: 40px;
 
 			@include media-query($on-mobile) {
-				width: 25px;
-				height: 25px;
+				width: 22px;
+				height: 22px;
 				bottom: 5px;
 			}
 		}
@@ -259,7 +260,6 @@ footer {
 		@include media-query($on-mobile) {
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 0;
 			width: 50%;
 		}
 

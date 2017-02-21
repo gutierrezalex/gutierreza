@@ -15,7 +15,7 @@ excerpt: Los Herederos document and promote personal narratives that accompany t
   <div class="screenshot-chrome">
     <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487698810/lh-screen_ttdpib.jpg">
   </div>
-  <div class="screenshot-mobile">
+  <div class="screenshot-device screenshot-mobile">
     <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487704574/lh-mobile_exaxjc.jpg">
   </div>
 </div>
