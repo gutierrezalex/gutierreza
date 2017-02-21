@@ -95,7 +95,7 @@ footer {
 	article {
 		display: flex;
 		flex-flow: row wrap;
-		margin-bottom: 9em;
+		margin-bottom: 8em;
 
 		@include media-query($on-tablet) {
 			margin-bottom: 6em;
@@ -173,25 +173,21 @@ footer {
 				left: initial;
 				bottom: initial;
 				right: 0;
-				margin-left: 2em;
-				margin-right: 2em;
-				padding-top: 2.4em;
-				padding-bottom: 2.6em;
-
-				@include media-query($on-mobile) {
-					padding-top: 2em;
-					padding-bottom: 2.2em;
-				}
+				margin-left: 3em;
+				margin-right: 3em;
+				padding: 2em .3em;
+				border-radius: 9px;
+				border-width: 3px;
 			}
 		}
 	}
 
 	&-chrome {
 		padding-top: 35px;
-		background-color: grey;
+		background-color: $background-color-taskbar;
 		border-radius: 6px 6px 0 0;
 		position: relative;
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 
 		@include media-query($on-mobile) {
 			background-color: transparent;
@@ -223,20 +219,10 @@ footer {
 		display: inline-block;
 		vertical-align: top;
 		background-color: black;
-		padding: 3.4em .6em 3.6em;
+		padding: 3em .4em 3.4em;
 		border-radius: 18px;
-		border: 3px solid rgba(255,255,255,.5);
-		margin: 2em;
-
-		// @include media-query($on-mobile) {
-		// 	margin-top: 1em;
-		// 	padding-top: 2em;
-		// 	padding-bottom: 2em;
-		// }
-
-		img {
-			border: 1px solid rgba(255,255,255,.08);
-		}
+		border: 2px solid rgba(255,255,255,.5);
+		margin: 0 2em 2em;
 
 		&:before, &:after {
 			position: absolute;
@@ -258,13 +244,13 @@ footer {
 		&:after {
 			width: 40px;
 			height: 40px;
-			bottom: 10px;
+			bottom: 9px;
 			border-radius: 40px;
 
 			@include media-query($on-mobile) {
 				width: 25px;
 				height: 25px;
-				bottom: 7px;
+				bottom: 5px;
 			}
 		}
 	}
@@ -278,12 +264,8 @@ footer {
 		}
 
 		&:before {
-			width: 70px;
+			width: 15%;
 			height: 3px;
-
-			@include media-query($on-mobile) {
-				width: 40px;
-			}
 		}
 	}
 

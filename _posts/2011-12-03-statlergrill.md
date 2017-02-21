@@ -12,9 +12,9 @@ excerpt: Serving classic New York prime steaks is their game, as well as daily d
 
 <div class="screenshot screenshot-combo">
   <div class="screenshot-chrome">
-    <img src="/assets/statlergrill-screenshot-1.jpg" srcset="/assets/statlergrill-screenshot-1@2x.jpg 2x">
+    <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487709474/sg-screen_shrhef.jpg">
   </div>
   <div class="screenshot-mobile">
-    <img src="/assets/statlergrill-screenshot-2.jpg" srcset="/assets/statlergrill-screenshot-2@2x.jpg 2x">
+    <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487709472/sg-mobile_js6brv.jpg">
   </div>
 </div>

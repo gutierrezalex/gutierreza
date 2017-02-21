@@ -11,9 +11,9 @@ excerpt: Resolve's tip exchange informs on the latest tips and tricks in removin
 
 <div class="screenshot screenshot-combo">
   <div class="screenshot-chrome">
-    <img src="/assets/powerofresolve-screenshot-1.jpg" srcset="/assets/powerofresolve-screenshot-1@2x.jpg 2x">
+    <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487709162/por-screen_us8vq8.jpg">
   </div>
   <div class="screenshot-mobile">
-    <img src="/assets/powerofresolve-screenshot-4.jpg" srcset="/assets/powerofresolve-screenshot-4@2x.jpg 2x">
+    <img class="cld-hidpi" data-src="http://res.cloudinary.com/gutierrezalex/image/upload/dpr_auto/v1487709160/por-mobile_qta4tj.jpg">
   </div>
 </div>
