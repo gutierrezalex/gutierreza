@@ -163,6 +163,7 @@ footer {
 			bottom: 0;
 			right: -1em;
 			margin: 0;
+			width: 30.5%;
 
 			@include media-query($on-mobile) {
 				width: initial;
