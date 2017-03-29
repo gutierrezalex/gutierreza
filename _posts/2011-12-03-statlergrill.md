@@ -3,7 +3,7 @@ layout: post
 categories: work
 tags: work
 title: Statler Grill
-excerpt: Serving classic New York prime steaks is their game, as well as daily delivered fresh seafood
+excerpt: Statler Grill serve classic steaks, prime ribs, fresh seafood and rich desserts
 ---
 
 * Designed and implemented on to Wordpress

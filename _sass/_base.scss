@@ -47,7 +47,7 @@ h4 {
 	margin-bottom: .4em;
 	color: #D81F00;
   font-weight: 400;
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
 
   @include media-query($on-mobile) {
     font-size: $font-size-xs;
@@ -81,7 +81,7 @@ b, strong {
 }
 
 a {
-  color: $text-color;
+  color: $highlight-color;
 }
 
 p:last-child,

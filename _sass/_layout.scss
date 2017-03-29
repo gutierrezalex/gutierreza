@@ -109,6 +109,13 @@ footer {
 
 		h4 {
 			flex: 1 100%;
+
+			span {
+				background-color: black;
+				padding: .3em .6em;
+				color: white;
+				border-radius: 1px;
+			}
 		}
 
 		h1, ul {
