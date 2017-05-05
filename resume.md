@@ -30,7 +30,7 @@ title:  "Alexander Gutierrez"
 - Attended feedback meetings
 - Troubleshooted for various mediums, functionality, and performance
 
-### [Arc90](http://www.arc90.com/), Web Designer/Developer, *7/2005 - 8/2010*
+### [Arc90](http://www.arc90.com/), Web Designer/Developer, *7/2007 - 8/2012*
 
 - Created web and UI mockups from meetings displaying  user experiences
 - Wrote HTML, CSS and applied Javascript for functionality from approved mockups
