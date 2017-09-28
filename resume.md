@@ -12,25 +12,24 @@ title:  "Alexander Gutierrez"
 
 #### Experience
 
-### [People](http://people.com/), Freelance Web Designer/Developer, *12/2015 - 3/2016*
+### [CareerMD](http://www.careermd.com/), Web Designer/Developer, *6/17 - Present*
+
+- Converted design mockups to HTML/CSS for both desktop, and mobile
+- Styled/implemented emails sent to clients
+
+### [People](http://people.com/), Freelance Web Designer/Developer, *12/15 - 3/16*
 
 - Contributed with updating People’s magazine desktop, and mobile web presence
 - Converted design mockups to HTML/CSS for both desktop, and mobile
 
-### [Kindling](http://kindlingapp.com/), Web Designer/Developer, *3/2014 - 11/2015*
+### [Kindling](http://kindlingapp.com/), Web Designer/Developer, *3/14 - 11/15*
 
 - Maintained their marketing website
 - Contributed to the marketing team with campaign designs and graphic support
 - Created email templates for Mailchimp and Hubspot
 - Assisted in the setup of video shoot talks
 
-### [Iris Worldwide](http://www.iris-worldwide.com/), Web Designer/Developer, *3/2013 - 7/2013*
-
-- Converted approved mockups to HTML/CSS, and added Javascript for functionality
-- Attended feedback meetings
-- Troubleshooted for various mediums, functionality, and performance
-
-### [Arc90](http://www.arc90.com/), Web Designer/Developer, *7/2007 - 8/2012*
+### [Arc90](http://www.arc90.com/), Web Designer/Developer, *7/08 - 8/12*
 
 - Created web and UI mockups from meetings displaying  user experiences
 - Wrote HTML, CSS and applied Javascript for functionality from approved mockups
