@@ -7,7 +7,7 @@ excerpt: Resolve's tip exchange informs on the latest tips and tricks in removin
 ---
 
 * Teamed up with back end developer to implement their in-house design onto Umbraco CMS
-* [Visit the site](http://powerofresolve.com)
+* Website: [powerofresolve.com](http://powerofresolve.com)
 
 <div class="screenshot screenshot-combo">
   <div class="screenshot-chrome">

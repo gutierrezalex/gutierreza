@@ -8,7 +8,7 @@ excerpt: Statler Grill serve classic steaks, prime ribs, fresh seafood and rich 
 
 * Designed and implemented on to Wordpress
 * Used the [Bootstrap](http://getbootstrap.com/) framework for this project
-* [Visit the site](http://statlergrill.com)
+* Website: [statlergrill.com](http://statlergrill.com)
 
 <div class="screenshot screenshot-combo">
   <div class="screenshot-chrome">

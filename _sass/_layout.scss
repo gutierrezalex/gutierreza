@@ -1,3 +1,52 @@
+// Global
+.p {
+	&-1 {
+		&-t {
+			padding-top: 1em;
+		}
+
+		&-r {
+			padding-right: 1em;
+		}
+
+		&-b {
+			padding-left: 1em;
+		}
+
+		&-l {
+			padding-left: 1em;
+		}
+	}
+}
+
+.m {
+	&-1 {
+		&-t {
+			margin-top: 1em;
+		}
+
+		&-r {
+			margin-right: 1em;
+		}
+
+		&-b {
+			margin-bottom: 1em;
+		}
+
+		&-l {
+			margin-left: 1em;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+
+	&-1 {
+		flex: 1 0;
+	}
+}
+
 /**
  * Global container
  */
@@ -383,7 +432,7 @@ footer {
 	  h3 {
 	    margin-bottom: 0;
 	    font-size: $font-size-base;
-	    font-weight: 600;
+	    font-weight: 700;
 	  }
 
 	  address {

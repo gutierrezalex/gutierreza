@@ -21,3 +21,6 @@ markdown: kramdown
 
 # Clean URL path
 permalink: /:title
+
+sass:
+    style: compressed
