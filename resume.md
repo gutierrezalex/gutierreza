@@ -12,7 +12,7 @@ title:  "Alexander Gutierrez"
 
 #### Experience
 
-### [CareerMD](http://www.careermd.com/), Web Designer/Developer, *6/17 - Present*
+### [CareerMD](http://www.careermd.com/), Freelance Web Designer/Developer, *6/17 - 10/17*
 
 - Converted design mockups to HTML/CSS for both desktop, and mobile
 - Styled/implemented emails sent to clients
@@ -22,7 +22,7 @@ title:  "Alexander Gutierrez"
 - Contributed with updating People’s magazine desktop, and mobile web presence
 - Converted design mockups to HTML/CSS for both desktop, and mobile
 
-### [Kindling](http://kindlingapp.com/), Web Designer/Developer, *3/14 - 11/15*
+### [Kindling](http://kindlingapp.com/), Freelance Web Designer/Developer, *3/14 - 11/15*
 
 - Maintained their marketing website
 - Contributed to the marketing team with campaign designs and graphic support
