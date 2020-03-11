@@ -1,0 +1,94 @@
+body {
+  font-family: $base-typeface;
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: $font-size-lrg;
+
+  @include media-query($on-mobile) {
+    font-size: $font-size-md;
+  }
+}
+
+h2 {
+  font-size: $font-size-lrg;
+  margin: 0;
+
+  @include media-query($on-mobile) {
+    font-size: $font-size-base;
+  }
+}
+
+h3 {
+  font-size: $font-size-md;
+
+  @include media-query($on-mobile) {
+    font-size: $font-size-sm;
+  }
+}
+
+h4 {
+	text-transform: uppercase;
+	margin-bottom: .4em;
+	color: #D81F00;
+  font-weight: 400;
+  font-size: $font-size-sm;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: $font-size-md;
+}
+
+h6 {
+  font-size: $font-size-sm;
+
+  @include media-query($on-mobile) {
+    font-size: $font-size-xs;
+  }
+}
+
+p {
+  font-size: $font-size-base;
+	margin-top: 0;
+
+  @include media-query($on-mobile) {
+    font-size: $font-size-sm;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+a {
+  color: $highlight-color;
+}
+
+p:last-child,
+li:last-child {
+  margin-bottom: 0;
+}
+
+figcaption {
+  font-size: $font-size-sm;
+
+  @include media-query($on-mobile) {
+    font-size: $font-size-xxs;
+  }
+}

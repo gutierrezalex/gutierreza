@@ -1,0 +1,455 @@
+// Global
+.p {
+	&-1 {
+		&-t {
+			padding-top: 1em;
+		}
+
+		&-r {
+			padding-right: 1em;
+		}
+
+		&-b {
+			padding-left: 1em;
+		}
+
+		&-l {
+			padding-left: 1em;
+		}
+	}
+}
+
+.m {
+	&-1 {
+		&-t {
+			margin-top: 1em;
+		}
+
+		&-r {
+			margin-right: 1em;
+		}
+
+		&-b {
+			margin-bottom: 1em;
+		}
+
+		&-l {
+			margin-left: 1em;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+
+	&-1 {
+		flex: 1 0;
+	}
+}
+
+/**
+ * Global container
+ */
+.inner {
+	max-width: 960px;
+  margin: 0 auto;
+
+  @include media-query($on-tablet) {
+    max-width: 670px;
+    padding: 0 .4em;
+  }
+
+  .resume & {
+    max-width: 600px;
+  }
+}
+
+/**
+ * Site header
+ */
+.header {
+	padding: 5em 0 4em;
+
+	@include media-query($on-mobile) {
+		padding: 2em 0;
+	}
+
+	.resume & {
+		padding: 0;
+	}
+
+  h1 {
+    margin: 0;
+		font-size: $font-size-xlrg;
+    font-weight: 300;
+    text-transform: uppercase;
+		line-height: 1.1;
+
+		@include media-query($on-mobile) {
+			font-size: $font-size-lrg * 1.06;
+		}
+  }
+
+	a {
+		color: $text-color;
+		text-decoration: none;
+	}
+
+	span {
+		color: $highlight-color;
+		&:before {
+			content: "";
+			display: block;
+		}
+	}
+
+	nav {
+		text-transform: uppercase;
+		margin-top: 1.6em;
+		font-size: $font-size-sm;
+
+		@include media-query($on-mobile) {
+			margin-top: 1em;
+			font-size: $font-size-xs;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	ul {
+		margin-bottom: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+}
+
+/**
+ * Footer
+ */
+footer {
+}
+
+/**
+ * Homepage
+ */
+.home {
+	background-color: $background-color-main-lighter;
+	background: linear-gradient(to left, $background-color-main, $background-color-main-lighter);
+
+	article {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 9em;
+
+		@include media-query($on-tablet) {
+			margin-bottom: 6em;
+		}
+
+		@include media-query($on-mobile) {
+			font-size: 90%;
+			display: block;
+			margin-bottom: 4em;
+		}
+
+		h4 {
+			flex: 1 100%;
+			font-weight: 300;
+			font-size: $font-size-xs;
+
+			span {
+				background-color: black;
+				padding: .3em .6em;
+				color: white;
+				border-radius: 1px;
+			}
+		}
+
+		h1, ul {
+			flex: 3 0;
+		}
+
+		h1 {
+			padding-right: 1em;
+
+			@include media-query($on-tablet) {
+				padding-right: 0;
+				margin-bottom: .4em;
+			}
+		}
+
+		li {
+	    margin-bottom: .3em;
+			margin-left: 3em;
+			list-style-type: square;
+
+			@include media-query($on-mobile) {
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+	  }
+	}
+}
+
+/**
+ * Screenshot chrome framing
+ */
+.screenshot {
+	text-align: center;
+	margin-left: -2.66em;
+	margin-right: -2.66em;
+
+	@include media-query($on-tablet) {
+		margin-left: -1em;
+		margin-right: -1em;
+	}
+
+	@include media-query($on-mobile) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&-combo {
+		position: relative;
+
+		.screenshot-mobile {
+			position: absolute;
+			bottom: 0;
+			right: -1em;
+			margin: 0;
+			width: 30.5%;
+
+			@include media-query($on-mobile) {
+				width: initial;
+				position: relative;
+				left: initial;
+				bottom: initial;
+				right: 0;
+				margin-left: 4em;
+				margin-right: 4em;
+				border-radius: 9px;
+				border-width: 3px;
+			}
+		}
+	}
+
+	&-chrome {
+		padding-top: 35px;
+		background-color: $background-color-taskbar;
+		border-radius: 6px 6px 0 0;
+		position: relative;
+		margin-bottom: 2em;
+
+		@include media-query($on-mobile) {
+			margin-bottom: 1em;
+			background-color: transparent;
+			padding-top: 0;
+		}
+
+		&:before {
+			content: "";
+			background:
+			radial-gradient(circle at 7px 50%, #FF6058 5px, transparent 6px),
+			radial-gradient(circle at 25px 50%, #FFBD2E 5px, transparent 6px),
+			radial-gradient(circle at 43px 50%, #29C940 5px, transparent 6px);
+
+			width: 60px;
+			height: 16px;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+
+			@include media-query($on-mobile) {
+				display: none;
+			}
+		}
+	}
+
+	&-device {
+		background-color: black;
+		border-radius: 20px;
+		border: 2px solid rgba(255,255,255,.25);
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		padding: 3em .4em 3.6em;
+		margin: 0 2em 2em;
+
+		@include media-query($on-mobile) {
+			margin-bottom: 1em;
+			padding: 2em .2em 2em;
+		}
+
+		&:before, &:after {
+			position: absolute;
+			content: "";
+		  left: 50%;
+			background-color: rgba(255,255,255,.15);
+		  transform: translateX(-50%);
+		}
+
+		&:before {
+		  top: 30px;
+			border-radius: 9px;
+
+			@include media-query($on-mobile) {
+				top: 20px;
+			}
+		}
+
+		&:after {
+			width: 40px;
+			height: 40px;
+			bottom: 9px;
+			border-radius: 40px;
+
+			@include media-query($on-mobile) {
+				width: 22px;
+				height: 22px;
+				bottom: 5px;
+			}
+		}
+	}
+
+	&-mobile {
+		@include media-query($on-mobile) {
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+
+		&:before {
+			width: 15%;
+			height: 3px;
+		}
+	}
+
+	&-tablet {
+		@include media-query($on-mobile) {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+
+		&:before {
+			width: 8px;
+			height: 8px;
+		}
+	}
+}
+
+/**
+ * Screenshot chrome framing
+ */
+.work {
+	header {
+		background-color: $lightgrey-color;
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		margin-bottom: 2.5em;
+	}
+
+	main {
+		h1 {
+			font-size: $font-size-xlrg;
+
+			@include media-query($on-mobile) {
+				font-size: $font-size-lrg * .87;
+			}
+		}
+
+		h1, ul {
+			width: 75%;
+
+			@include media-query($on-mobile) {
+				width: initial;
+			}
+		}
+	}
+
+	footer {
+		background-color: $lightgrey-color;
+		padding: 4em 0;
+		margin-top: 2em;
+
+	  @include media-query($on-mobile) {
+			padding: 2em 0;
+	  }
+
+		.inner {
+			max-width: 800px;
+		}
+
+		ul {
+			margin-bottom: 0;
+			font-size: $font-size-sm;
+			display: flex;
+			justify-content: center;
+
+			@include media-query($on-mobile) {
+				display: block;
+		  }
+		}
+
+		li {
+			width: 40%;
+			margin: 0 1em 0;
+
+			@include media-query($on-mobile) {
+				width: initial;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			&:first-child {
+				@include media-query($on-mobile) {
+					margin-bottom: 2em;
+				}
+			}
+		}
+	}
+}
+
+/**
+ * Resume
+ */
+.resume {
+	padding-top: 5em;
+	padding-bottom: 5em;
+
+	@include media-query($on-mobile) {
+		padding-top: 2em;
+	}
+
+  main {
+		article a {
+	    color: $text-color;
+	  }
+
+	  h3 {
+	    margin-bottom: 0;
+	    font-size: $font-size-base;
+	    font-weight: 700;
+	  }
+
+	  address {
+      font-style: normal;
+      margin: .4em 0 2em;
+	  }
+
+	  em {
+	      font-weight: normal;
+	  }
+
+	  ul {
+	  	margin: .4em 0 2.4em;
+	  }
+
+	  li {
+	    margin-bottom: .4em;
+	  }
+  }
+}

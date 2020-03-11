@@ -1,0 +1,45 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$base-typeface: 'Lato', 'Helvetica Neue', sans-serif;
+
+$font-size-xxs: .7em;
+$font-size-xs: .78em;
+$font-size-sm: .9em;
+$font-size-base: 1.06em;
+$font-size-md: 1.26em;
+$font-size-lrg: 1.5em;
+$font-size-xlrg: 2em;
+
+$text-color: #111;
+$background-color-main: #eacda3;
+$background-color-main-lighter: #eacda3;
+
+$background-color-taskbar: #C5A689;
+
+$lightgrey-color: #F0F0F0;
+
+$highlight-color: #D81F00;
+
+$color-ubrlocal: #94AC3D;
+
+$frame-chrome-color: rgba(0,0,0,.15);
+
+$on-mobile: 414px;
+$on-tablet: 768px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "reset",
+  "base",
+  "layout"
+;

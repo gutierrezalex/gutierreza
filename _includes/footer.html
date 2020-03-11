@@ -1,0 +1,27 @@
+</main>
+<footer class="footer">
+   <section class="projects">
+     <div class="inner">
+    {% if page.path contains '_posts' %}
+      <ul>
+        {% for post in site.posts limit:3 %}
+          {% if post.url != page.url %}
+            {% if forloop.index < 3 or found %}
+            <li>
+              <h4>{{ post.tags }}</h4>
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              <p>{{ post.excerpt }}</p>
+            </li>
+            {% endif %}
+          {% else %}
+            {% assign found = true %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+    </div>
+   </section>
+</footer>
+<script>
+  $.cloudinary.responsive();
+</script>
