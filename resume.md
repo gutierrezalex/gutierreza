@@ -37,7 +37,7 @@ title:  "Alexander Gutierrez"
 #### Technical
 
 Strong HTML and CSS\
-Workflow with OOCSS and BEM methodologies\
+Workflow with OOCSS\
 Knowledge of preprocessor languages—SASS\
 Responsive design for various mediums\
 Workflow with version control—git\
