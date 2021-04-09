@@ -8,9 +8,9 @@
       {% if post.url != page.url %}
         {% if forloop.index < 3 or found %}
         <article>
-      		<a href="{{ post.url }}">
-            <img src="../img/{{ post.alt-img }}" alt="">
-          </a>
+      		<h3><a href="{{ post.url }}">
+            {{ post.title }}
+          </a></h3>
         </article>
         {% endif %}
       {% else %}
