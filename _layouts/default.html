@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="{{ page.categories }} {{ page.id | remove:'/' }}">
+  <body class="{% if page.categories %}{{ page.categories }} {% endif %}{{ page.id | remove:'/' }}">
 
     {% include header.html %}
 

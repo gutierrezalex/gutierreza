@@ -1,5 +1,5 @@
-<header class="header">
-  <div class="inner">
+<header>
+  <div class="container">
     <h1>
       <a href="/">
         Alexander Gutierrez
@@ -8,6 +8,14 @@
       {% endif %}
     	</a>
     </h1>
+    {% if page.id != 'resume' %}
+    <nav>
+      <ul class="list-unstyled d-flex d-flex-2">
+        <li><a href="/resume">Resume</a></li>
+        <li><a href="mailto:gutierrezalex@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    {% endif %}
   </div>
 </header>
 <main>

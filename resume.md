@@ -10,17 +10,22 @@ title:  "Alexander Gutierrez"
     (646) 496-8612<br>
 </address>
 
+[View resume in PDF format](resume.pdf){:target="_blank"}
+
+<br>
+
 #### Experience
 
-### [CareerMD](http://www.careermd.com/), Freelance Web Designer/Developer, *6/17 - 10/17*
+### [The Architect’s Newspaper](https://www.archpaper.com/), Freelance Web Designer/Developer, *2/18 - Present*
 
-- Converted design mockups to HTML/CSS for both desktop, and mobile
-- Styled/implemented emails sent to clients
+- Maintain and update the event websites for the marketing team
+- Work with designers to implement mockups on to the web
+- Troubleshoot layout bugs on client email templates
 
 ### [People](http://people.com/), Freelance Web Designer/Developer, *12/15 - 3/16*
 
 - Contributed with updating People’s magazine desktop, and mobile web presence
-- Converted design mockups to HTML/CSS for both desktop, and mobile
+- Converted design mockups to responsive HTML/CSS websites
 
 ### [Kindling](http://kindlingapp.com/), Freelance Web Designer/Developer, *3/14 - 11/15*
 
@@ -29,16 +34,16 @@ title:  "Alexander Gutierrez"
 - Created email templates for Mailchimp and Hubspot
 - Assisted in the setup of video shoot talks
 
-### [Arc90](http://www.arc90.com/), Web Designer/Developer, *7/08 - 8/12*
-
-- Created web and UI mockups from meetings displaying  user experiences
-- Wrote HTML, CSS and applied Javascript for functionality from approved mockups
-- Attended meetings for feedback
-- Troubleshoot browsers for compliance and performance
-
 #### Technical
 
-- Strong HTML and CSS- Workflow with OOCSS and BEM methodologies- Knowledge of preprocessor languages&mdash;SASS- Responsive design for various mediums- Workflow with version control&mdash;git- Proficient with image editing tools&mdash;Adobe CS, Sketch- Customization of WordPress publishing platform- Familiar with JavaScript&mdash;jQuery library
+Strong HTML and CSS\
+Workflow with OOCSS and BEM methodologies\
+Knowledge of preprocessor languages—SASS\
+Responsive design for various mediums\
+Workflow with version control—git\
+Proficient with image editing tools—Adobe CS, Sketch and Figma\
+Customization of WordPress publishing platform\
+Familiar with JavaScript—jQuery library\
 
 #### Education
 
@@ -47,5 +52,3 @@ title:  "Alexander Gutierrez"
 #### Languages
 
 - Fluent in Spanish
-
-[View resume in PDF format](resume.pdf)

@@ -2,15 +2,28 @@
 layout: default
 id: home
 ---
-
-<section>
-	<div class="inner">
-    {% for post in site.categories.work %}
-    <article>
-			<h4><span>{{ post.tags }}</span></h4>
-			<h1>{{ post.excerpt }}</h1>
-			{{ post.content }}
-    </article>
-    {% endfor %}
-	</div>
-</section>
+<div class="container">
+  {% for post in site.categories.work %}
+  <article class="mb-5">
+    <p class="tag">{{ post.tags }}</p>
+    <div class="d-grid d-grid-21">
+      <h2 class="title mb-0">
+        {{ post.excerpt }}
+      </h2>
+      <div class="d-flex justify-content-center align-items-center btn-container">
+        <div class="pl-1">
+          <a class="btn" href="{{ post.url }}">View Project <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <figure>
+      <div class="screenshot screenshot-chrome">
+        <a href="{{ post.url }}">
+          <img src="/img/{{ post.featured-img }}" alt="{{ post.featured-alt | default: 'image' }}" loading="lazy">
+        </a>
+      </div>
+      <figcaption>{{ post.featured-alt | default: 'image' }}</figcaption>
+    </figure>
+  </article>
+  {% endfor %}
+</div>

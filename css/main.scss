@@ -3,43 +3,46 @@
 ---
 @charset "utf-8";
 
-$base-typeface: 'Lato', 'Helvetica Neue', sans-serif;
+$font-primary: 'Open Sans', sans-serif;
 
-$font-size-xxs: .7em;
-$font-size-xs: .78em;
-$font-size-sm: .9em;
-$font-size-base: 1.06em;
-$font-size-md: 1.26em;
-$font-size-lrg: 1.5em;
-$font-size-xlrg: 2em;
+$font-size-sm: .88rem;
+$font-size-base: 1.1rem;
+$font-size-md: 1.26rem;
+$font-size-lg: 1.5rem;
 
-$text-color: #111;
-$background-color-main: #eacda3;
-$background-color-main-lighter: #eacda3;
+// :root {
+//   --xy: 50% 53%;
+//   --b: 60deg;
+//   --a: 102deg;
+//   --c0: #be5128;
+//   --c1: #ce9248;
+//   --c2: #e4c060;
+//   --c3: #db9c4e;
+// }
+// $clr-primary-gradient: conic-gradient(from var(--b) at var(--xy), var(--c0) var(--a), var(--c1) 0% 50%, var(--c2) 0% calc(180deg + var(--a)), var(--c3) 0%);
 
-$background-color-taskbar: #C5A689;
+$clr-base: #111;
+$clr-primary: #eacda3;
+$clr-primary-gradient: conic-gradient(from 180deg at 50% 110%, white, orange);
+$clr-secondary: #9F3726;
+$clr-secondary-light: #685654;
+$clr-light: #e6e6e6;
+$clr-light-a: rgba(0,0,0,.15);
 
-$lightgrey-color: #F0F0F0;
-
-$highlight-color: #D81F00;
-
-$color-ubrlocal: #94AC3D;
-
-$frame-chrome-color: rgba(0,0,0,.15);
-
-$on-mobile: 414px;
+$on-desktop: 1024px;
+$on-mobile: 375px;
 $on-tablet: 768px;
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media (min-width: $device) {
+    @content;
+  }
 }
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "reset",
+  "rfs",
   "base",
   "layout"
 ;
