@@ -22,6 +22,11 @@ title:  "Alexander Gutierrez"
 - Work with designers to implement mockups on to the web
 - Troubleshoot layout bugs on client email templates
 
+### [CareerMD](https://careermd.com/), Freelance Web Designer/Developer, *6/17 - 10/17*
+
+- Converted design mockups to HTML/CSS for both desktop, and mobile
+- Styled/implemented emails sent to clients
+
 ### [People](http://people.com/), Freelance Web Designer/Developer, *12/15 - 3/16*
 
 - Contributed with updating People’s magazine desktop, and mobile web presence
@@ -36,14 +41,15 @@ title:  "Alexander Gutierrez"
 
 #### Technical
 
-Strong HTML and CSS\
-Workflow with OOCSS\
-Knowledge of preprocessor languages—SASS\
-Responsive design for various mediums\
-Workflow with version control—git\
-Proficient with image editing tools—Adobe CS, Sketch and Figma\
-Customization of WordPress publishing platform\
-Familiar with JavaScript—jQuery library\
+- Strong HTML and CSS
+- Workflow with OOCSS
+- Knowledge of preprocessor languages—SASS, SCSS
+- Responsive design for various mediums
+- Workflow with version control—git
+- Proficient with image editing tools—Adobe Apps, Sketch and Figma
+- Familiar with JavaScript—jQuery library
+- Customization of WordPress publishing platform
+- Work with Bootstrap library
 
 #### Education
 
