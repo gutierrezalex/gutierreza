@@ -8,13 +8,10 @@ featured-img: lh.jpg
 featured-alt: Los Herederos Website
 ---
 
-
 Mauricio Bayona, the Artistic Director had some branding around their name, and wanted a website displaying the projects, journal posts and
 * Designed and implemented on to Wordpress
 * Typeface used: [Oswald](https://fonts.google.com/specimen/Oswald)
 * Logo design by [Gaspar Guerra](http://gasparguerra.nyc/los-herederos/)
-
-Website: [losherederos.org](http://losherederos.org)
 
 <div class="mt-4 mb-4 d-grid d-grid-screenshots">
   <div>
@@ -48,3 +45,5 @@ Website: [losherederos.org](http://losherederos.org)
   </div>
   <figcaption>Los Herederos services page</figcaption>
 </figure>
+
+Visit the website: [losherederos.org](http://losherederos.org)

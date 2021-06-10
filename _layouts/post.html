@@ -3,8 +3,18 @@ layout: default
 ---
 <article>
   <div class="container">
-    <p class="font-sm text-uppercase"><a class="text-underline-none text-secondary" href="../"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a></p>
-    <h1>{{ page.title }}</h1>
+    <p class="font-sm text-uppercase">
+      <a class="text-underline-none text-secondary" href="../">
+      <svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="d-inline-block svg-clr-secondary">
+        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+          <g id="angle-pointing-to-left" fill-rule="nonzero">
+              <path d="M2.16791579,5.99865263 L6.89237895,1.27427368 C6.97246316,1.19414737 7.01254737,1.10193684 7.01254737,0.997768421 C7.01254737,0.8936 6.97250526,0.801389474 6.89237895,0.721431579 L6.29124211,0.120294737 C6.21107368,0.0402105263 6.11890526,0 6.01498947,0 C5.91077895,0 5.81861053,0.0402105263 5.73848421,0.120294737 L0.136421053,5.72210526 C0.0562947368,5.80223158 0.0163368421,5.89444211 0.0163368421,5.99861053 C0.0163368421,6.10282105 0.0562947368,6.19498947 0.136421053,6.27511579 L5.73818947,11.8769263 C5.81844211,11.9571789 5.91069474,11.9972211 6.01486316,11.9972211 C6.11890526,11.9972211 6.21107368,11.9571789 6.2912,11.8769263 L6.89233684,11.2762105 C6.97242105,11.1960842 7.01237895,11.1038316 7.01237895,10.9995789 C7.01237895,10.8954947 6.97246316,10.8033263 6.89233684,10.7232 L2.16791579,5.99865263 Z" id="Path"></path>
+          </g>
+        </g>
+      </svg>
+      Back</a>
+    </p>
+    <h1>{{ page.excerpt }}</h1>
     {{ content }}
   </div>
 </article>

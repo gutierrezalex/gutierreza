@@ -2,14 +2,11 @@
 layout: post
 categories: work
 tags: design+web
-title:  "Niegel Smith"
+title: "Niegel Smith"
+excerpt: Niegel Smith, performance artist and theater director who sculpts social spaces into unique communal environments.
 featured-img: ns.jpg
 featured-alt: Niegel Smith Website
 ---
-
-Niegel Smith, performance artist and theater director who sculpts social spaces into unique communal environments.
-
-<!-- more -->
 
 * Designed and implemented on to Wordpress
 * Website: [niegelsmith.com](http://niegelsmith.com)

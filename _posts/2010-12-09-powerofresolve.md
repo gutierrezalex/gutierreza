@@ -3,13 +3,10 @@ layout: post
 categories: work
 tags: web
 title: Power of Resolve
+excerpt: Resolve's tip exchange informs on the latest tips and tricks in removing difficult stains.
 featured-img: por.jpg
 featured-alt: Power of Resolve
 ---
-
-Resolve's tip exchange informs on the latest tips and tricks in removing difficult stains.
-
-<!-- more -->
 
 * Teamed up with back end developer to implement their in-house design onto Umbraco CMS
 * Website: [powerofresolve.com](http://powerofresolve.com)
